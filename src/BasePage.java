@@ -70,12 +70,12 @@ public static Config appConfig = new Config();
 		System.out.println("CloseConnection");
 	}
 	
-	protected  void Screenshot(String fileName) {
+	public  void Screenshot(String fileName) {
         try {
         	File screenshotDir = new File("Screenshot");
         	if (!screenshotDir.exists()) screenshotDir.mkdir();
         	
-            FileOutputStream out = new FileOutputStream("Screenshot/"+fileName + "_TheShare.png");
+            FileOutputStream out = new FileOutputStream("Screenshot/"+fileName + "_Socialink.png");
             out.write(((org.openqa.selenium.TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES));
             out.close();
         } catch (Exception e) {
@@ -90,7 +90,7 @@ public static Config appConfig = new Config();
 			File screenshotDir = new File("Screenshot");
         	if (!screenshotDir.exists()) screenshotDir.mkdir();
 			capture = new Robot().createScreenCapture(screenRect);
-			ImageIO.write(capture, "jpg", new File("Screenshot/"+fileName + "_TheShare.png"));
+			ImageIO.write(capture, "jpg", new File("Screenshot/"+fileName + "_Socialink.png"));
 		} catch (AWTException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

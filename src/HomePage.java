@@ -19,6 +19,7 @@ public class HomePage extends BasePage {
 		WebElement getStarted= driver.findElement(getStartedButton);
 		
 		emial.sendKeys("testemail@gmail.com");
+		Screenshot("HomePage");
 		getStarted.click();
 		
 		return new HomePage();
@@ -26,6 +27,8 @@ public class HomePage extends BasePage {
 	
 	public String getHeadingText()
 	{
-		return driver.findElement(photoHeader).getText();
+		String Headtext= driver.findElement(photoHeader).getText();
+		Screenshot("photosPage");
+		return Headtext;
 	}
 }
