@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<!-- Test Data -->
+<entry key="url">https://socialink.me/karoltest</entry>
+<entry key="timeout">20</entry>
+</properties>
